@@ -10,6 +10,21 @@ A Python-based visualization tool for plotting accelerator lattice elements usin
 - SVG/PNG icon support for element visualization
 - Interactive hover information for each element
 - Comprehensive element type handling (UP, CT, DN markers)
+- Element search and filtering functionality
+- Mini-map overview for easy navigation
+- Tabbed interface with multiple views:
+  - Main Plot View
+  - Missing Dimension Elements List
+  - Required Icons List
+  - Icons Table with Preview
+- Color-coded element visualization:
+  - Zero-length elements shown as dashed lines
+  - Elements with length shown as rectangles with icons
+  - Cryomodules displayed as semi-transparent backgrounds
+- Detailed hover information showing element positions and dimensions
+- Icon preview table with guessed element types
+- Aspect ratio locking for better visualization
+- Proper axis labels and title
 
 ## Requirements
 
@@ -42,10 +57,19 @@ python lattice_visualizer.py
    - Select one or more Excel files containing lattice element data
    - Choose the directory containing element icons (SVG/PNG)
 
-3. The script will generate an interactive plot showing:
-   - Element positions and dimensions
-   - Cryomodule boundaries
-   - Hover information for each element
+3. The script will generate an interactive HTML file with:
+   - Main interactive plot showing element positions and dimensions
+   - Search bar for filtering elements by name
+   - Mini-map for easy navigation
+   - Tabbed interface for accessing different views
+   - Table of icons with previews and guessed types
+
+4. Navigation and Interaction:
+   - Use the search bar to filter elements by name
+   - Switch between different views using the tabs
+   - Use the mini-map for quick navigation
+   - Hover over elements for detailed information
+   - View icon previews and types in the Icons Table
 
 ## Input File Format
 
@@ -69,6 +93,10 @@ The Excel files should contain the following columns:
 ### Interactive Features
 - Zoom and pan capabilities
 - Detailed hover information for each element
+- Element search and filtering
+- Mini-map navigation
+- Tabbed interface for different views
+- Icon preview table
 - Customizable layout and appearance
 
 ## Contributing
